@@ -2,5 +2,16 @@
   "name": "vanilla-poll-graph",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "babel lib -w -d dist/js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.3",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "jest": "^27.5.1"
+  },
+  "dependencies": {}
 }
