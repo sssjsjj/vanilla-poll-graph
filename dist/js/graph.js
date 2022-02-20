@@ -6,6 +6,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.babelArrow = babelArrow;
 exports.babelSet = babelSet;
 
+require("core-js/stable");
+
 function babelSet(num) {
   const set1 = new Set([1, 2, 3, 4, 5]);
   return set1.has(num);
