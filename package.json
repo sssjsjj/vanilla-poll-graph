@@ -4,14 +4,18 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "babel lib -w -d dist/js",
+    "dev": "node app.js",
+    "build": "webpack -w",
     "test": "jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.3",
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
-    "jest": "^27.5.1"
+    "babel-loader": "^8.2.3",
+    "jest": "^27.5.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
   },
   "dependencies": {}
 }
