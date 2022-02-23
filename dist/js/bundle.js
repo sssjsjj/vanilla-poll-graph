@@ -1,3 +1,8 @@
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!**********************!*\
+  !*** ./lib/Graph.js ***!
+  \**********************/
 /*
 - 생성자 함수로 작업할 것.
 - 하나의 문항(타이틀)을 가진다.
@@ -172,3 +177,6 @@ const graph1 = new Graph('graph1', {
 //   // points: 5,
 // })
 // module.exports = graph
+/******/ })()
+;
+//# sourceMappingURL=bundle.js.map

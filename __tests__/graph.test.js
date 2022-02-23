@@ -1,8 +1,5 @@
-const { babelSet, babelArrow } = require('../lib/graph');
+const graph = require('../lib/graph');
 
-test('babel Set', () => {
-  expect(babelSet(5)).toBe(true);
-});
-test('babel arrow', () => {
-  expect(babelArrow(1)).toBe(1);
+test('set has 5', () => {
+  expect(graph(5)).toBe(true);
 });
