@@ -8,9 +8,9 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   const path = url.parse(req.url, true).pathname; // url에서 path 추출
   res.statusCode = 200;
-  if (path === '/dist/js/bundle.js') {
+  if (path.includes('.js')) {
     res.setHeader('Content-Type', 'text/javascript');
-    fs.readFile(__dirname + '/dist/js/bundle.js', (err, data) => {
+    fs.readFile(__dirname + path, (err, data) => {
       if (err) {
         return console.error(err);
       }
