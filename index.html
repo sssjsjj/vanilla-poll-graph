@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>설문 조사</title>
+  <script type="text/javascript" defer src="./dist/js/bundle.js"></script>
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+    body {font-family: Pretendard; font-size: 16px; line-height: 1.5;}
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    dl, dt, dd, ul, li {list-style: none;}
+    .container {max-width: 780px; margin: 0 auto; padding: 50px 0;}
+    .graph + .graph {margin-top: 40px;}
+    .wrap-graph > .label-main {padding-bottom: 10px; font-weight: bold; font-size: 1.1em; background-color: white;}
+    .wrap-graph > .wrap-answer > .answer{display: flex;}
+    .wrap-graph > .wrap-answer > .answer + .answer{margin-top: 10px;}
+    .wrap-graph > .wrap-answer > .answer > .label-answer {width: 100px;}
+    .wrap-graph > .wrap-answer > .answer > .area-data {flex: 1;}
+    .wrap-graph > .wrap-answer > .answer > .area-data > .value-data{display: block; padding-right: 5px; font-size: 0.9em; text-align: right;}
+
+    .area-graph {position: relative; padding-bottom: 2em;}
+    .area-graph > .points {display: flex; justify-content: space-between; position: absolute;  z-index: -1; top: 0; left: 0; width: 100%; height: 100%; padding-left: 100px;}
+    .area-graph > .points > .point {position: relative;display: flex; align-items: flex-end; justify-content: center; font-size: 0.9em; color: lightgray; transform: translateX(-50%);}
+    .area-graph > .points > .point:before {position: absolute; z-index: -1; width: 1px; height: 100%; background-color: lightgray; content: '';}
+    .area-graph > .points > .point > .value-point {padding-top: 0.5em; background-color: white;}
+
+    .wrap-average {font-weight: bold;}
+    .wrap-average .value-average {margin-left: 10px;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="graph1" class="graph" data-graph="오늘 먹은 메뉴는 맛있었나요?">
+      <!-- <div class="area-graph">
+        <dl class="wrap-graph">
+          <dt class="label-main">오늘 먹은 메뉴는 맛있었나요?</dt>
+          <div class="wrap-answer">
+            <dd class="answer"><span class="label-answer">매우 아니다</span><span class="area-data"><span class="value-data" style="width: 96%;">24</span></span></dd>
+            <dd class="answer"><span class="label-answer">아니다</span><span class="area-data"><span class="value-data" style="width: 76%;">19</span></span></dd>
+            <dd class="answer"><span class="label-answer">보통이다</span><span class="area-data"><span class="value-data" style="width: 64%;">16</span></span></dd>
+            <dd class="answer"><span class="label-answer">그렇다</span><span class="area-data"><span class="value-data" style="width: 68%;">17</span></span></dd>
+            <dd class="answer"><span class="label-answer">매우 그렇다</span><span class="area-data"><span class="value-data" style="width: 76%;">19</span></span></dd>
+          </div>
+        </dl>
+        <ul class="points">
+          <li class="point">0</li>
+          <li class="point">5</li>
+          <li class="point">10</li>
+          <li class="point">15</li>
+          <li class="point">20</li>
+          <li class="point">25</li>
+        </ul>
+        <div class="wrap-average">
+          <p class="average">평균<span class="value-average">44.50%</span></p>
+        </div>
+      </div> -->
+    </div>
+    
+    <div id="graph2" class="graph" data-graph="서비스는 만족스러우셨나요?"></div>
+
+    <div id="graph3" class="graph" data-graph="테이블과 식기구는 청결했나요?"></div>
+  </div>
+</body>
+</html>
